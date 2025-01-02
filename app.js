@@ -2,18 +2,6 @@
 
 const tg = window.Telegram.WebApp;
 
-// Wait for the video to finish before showing the main content
-window.onload = () => {
-  const video = document.getElementById("loadingVideo");
-  const videoLoader = document.getElementById("videoLoader");
-  const mainContent = document.getElementById("mainContent");
-
-  // Automatically hide the loader after 3 seconds
-  video.onended = () => {
-    videoLoader.style.display = "none";
-    mainContent.style.display = "block";
-  };
-
   // Fallback in case the video doesn't play properly
   setTimeout(() => {
     videoLoader.style.display = "none";
