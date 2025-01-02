@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AG Creative Mini App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Video Loader -->
+  <div id="videoLoader">
+    <video autoplay muted playsinline id="loadingVideo">
+      <source src="photos&videos/Official Agency Logo Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="display: none;">
+    <header>
+      <h1>AG Creative Agency</h1>
+      <p>Sign your vision with style!</p>
+    </header>
+
+    <main>
+      <section id="portfolio">
+        <h2>Interactive Portfolio</h2>
+        <div id="gallery">
+          <div class="project">
+            <img src="https://via.placeholder.com/150" alt="Project 1">
+            <p>Project 1: Logo Design</p>
+          </div>
+          <div class="project">
+            <img src="https://via.placeholder.com/150" alt="Project 2">
+            <p>Project 2: Website Development</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Service Selector</h2>
+        <ul>
+          <li>Logo Design</li>
+          <li>Website Development</li>
+          <li>Branding</li>
+        </ul>
+      </section>
+
+      <section id="quote">
+        <h2>Instant Quote</h2>
+        <input type="text" id="requirement" placeholder="Describe your project">
+        <button id="quoteBtn">Get Quote</button>
+        <p id="quoteResult"></p>
+      </section>
+
+      <section id="booking">
+        <h2>Booking System</h2>
+        <button id="bookNow">Book a Service</button>
+      </section>
+
+      <section id="inspiration">
+        <h2>Creative Inspiration</h2>
+        <p id="inspirationText">"Design is intelligence made visible." – Alina Wheeler</p>
+      </section>
+
+      <section id="feedback">
+        <h2>Feedback & Testimonials</h2>
+        <textarea id="feedbackInput" placeholder="Leave your feedback"></textarea>
+        <button id="submitFeedback">Submit Feedback</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 AG Creative Agency</p>
+    </footer>
+  </div>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
